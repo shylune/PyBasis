@@ -1,2 +1,2 @@
-# py_basis_learning
+# py_basis
 Personal learning notes for python 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# --- author: slin ---
+# --- author: shi00 ---
 import pika
 
 

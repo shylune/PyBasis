@@ -26,6 +26,10 @@ class Student(object):
             return 'C'
 
 
+class S(object):
+    note = "I'm property of class S.\n"
+
+
 if __name__ == "__main__":
     lily = Student('lily', 21, 97)
     lucy = Student('lucy', 21, 78)
@@ -34,3 +38,23 @@ if __name__ == "__main__":
     print(lucy.name, lucy.age, lucy.get_grade(), lucy.address)
     # 能够在“运行时”创建实例属性，是 Python 类的优秀特性之一（正好验证笔记中的第4点）
     # print(lily.name, lily.age, lily.get_grade(), lily.address)
+
+    """
+    运行过程中，可以为实例对象动态添加属性。
+    1. 动态添加的实例属性名称可以已有的类属性相同，访问顺序为：先查找实例属性，入如果没有再查找类属性。
+    2. 为实例添加新属性，只对当前实例有效；对其他同类实例访问此属性，将抛出AttributeError
+    """
+    s1 = S()
+    s2 = S()
+    print(s1.note, s2.note, S.note)
+
+    s1.note = "I'm testing for property.\n"
+    print(s1.note, s2.note, S.note)
+
+    S.note = "OK..."
+    print(s1.note, s2.note, S.note)
+
+    s2.name = "error"
+    # print(s1.name, s2.name, S.name)     # 报错, 抛出AttributeError错误
+
+

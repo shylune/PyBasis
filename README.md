@@ -1,2 +1,15 @@
-# Python Basic knowledge practice
-Personal learning notes for python 
+# **Python 学习笔记 --- 个人学习过程记录，请多指教**
+
+**内容概要**
+1、Python 基础要点以及常用内置模块
+   1.1 基础类型 --- 基本数据类型及其注意点
+   1.2 函数使用 --- 函数定义、参数、内置高阶函数、闭包、装饰器
+   1.3 面向对象 --- 
+
+2、Python 强大的第三库模块学习使用
+   2.1 celery ---
+   2.3 rabbitmq ---
+   
+
+**内容详情**
+未完待续 ...

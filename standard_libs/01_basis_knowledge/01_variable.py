@@ -25,10 +25,10 @@ f = 1.5
 s = "hi"
 b = True
 n = None
-l = [1, 2, 3, 4, 3]
+a = [1, 2, 3, 4, 3]
 t = (1, 2, 3, 4, 3)
 d = {"a": 1, "b": 2}
-ss = set(l)
+ss = set(a)
 sss = {1, 2, 3, 3}
 
 print(type(ss), ss)
